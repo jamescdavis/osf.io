@@ -98,19 +98,7 @@ class GuidMODMCompatibilityQuerySet(MODMCompatibilityQuerySet):
     """
 
     def __init__(self, model=None, query=None, using=None, hints=None):
-        self.__for_write = False
-        return super(GuidMODMCompatibilityQuerySet, self).__init__(model=model, query=query, using=using, hints=hints)
-
-    @property
-    def _for_write(self):
-        return self.__for_write
-
-    @_for_write.setter
-    def _for_write(self, value):
-        self.query.annotations.pop('guids___id', None)
-        if not value:
-            self.query.add_annotation(F('guids___id'), 'guids___id', is_summary=False)
-        self.__for_write = value
+        super(GuidMODMCompatibilityQuerySet, self).__init__(model=model, query=query, using=using, hints=hints)
 
 
 class BaseModel(models.Model):
