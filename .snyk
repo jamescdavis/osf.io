@@ -1,0 +1,41 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.7.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:ms:20170412':
+    - share > express > connect > morgan > debug > ms:
+        patched: '2017-08-25T03:56:09.379Z'
+    - share > express > debug > ms:
+        patched: '2017-08-25T03:56:09.379Z'
+    - share > express > send > debug > ms:
+        patched: '2017-08-25T03:56:09.379Z'
+    - share > express > connect > body-parser > debug > ms:
+        patched: '2017-08-25T03:56:09.379Z'
+    - share > express > connect > compression > debug > ms:
+        patched: '2017-08-25T03:56:09.379Z'
+    - share > express > connect > connect-timeout > debug > ms:
+        patched: '2017-08-25T03:56:09.379Z'
+    - share > express > connect > express-session > debug > ms:
+        patched: '2017-08-25T03:56:09.379Z'
+    - share > express > connect > finalhandler > debug > ms:
+        patched: '2017-08-25T03:56:09.379Z'
+    - share > express > connect > debug > ms:
+        patched: '2017-08-25T03:56:09.379Z'
+    - share > express > connect > serve-index > debug > ms:
+        patched: '2017-08-25T03:56:09.379Z'
+    - share > express > connect > serve-static > send > debug > ms:
+        patched: '2017-08-25T03:56:09.379Z'
+    - share > express > send > ms:
+        patched: '2017-08-25T03:56:09.379Z'
+    - share > express > connect > connect-timeout > ms:
+        patched: '2017-08-25T03:56:09.379Z'
+    - share > express > connect > serve-static > send > ms:
+        patched: '2017-08-25T03:56:09.379Z'
+    - share > express > connect > serve-favicon > ms:
+        patched: '2017-08-25T03:56:09.379Z'
+  'npm:negotiator:20160616':
+    - share > express > connect > compression > accepts > negotiator:
+        patched: '2017-08-25T03:56:09.379Z'
+    - share > express > connect > serve-index > accepts > negotiator:
+        patched: '2017-08-25T03:56:09.379Z'
