@@ -17,7 +17,7 @@
     "diff": "~2.2.2",
     "dropzone": "git://github.com/CenterForOpenScience/dropzone.git#aba21eb6b82cc823ac7a7a53d6e035791c082bae",
     "exports-loader": "0.6.3",
-    "express": "~4.10.0",
+    "express": "~4.16.0",
     "file-loader": "^0.8.1",
     "font-awesome": "^4.4.0",
     "font-awesome-webpack": "0.0.4",
