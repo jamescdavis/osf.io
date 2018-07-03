@@ -11,7 +11,7 @@
     "@centerforopenscience/osf-style": "https://github.com/CenterForOpenScience/osf-style#370b544affcdafc5734cdd388587575895e4b33a",
     "URIjs": "^1.14.1",
     "assets-webpack-plugin": "^0.1.0",
-    "babel-loader": "^4.1.0",
+    "babel-loader": "^6.0.0",
     "body-parser": "~1.12.0",
     "bootbox": "^4.4.0",
     "bootstrap": "3.3.7",
