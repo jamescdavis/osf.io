@@ -66,7 +66,8 @@
     "url-loader": "0.5.7",
     "uuid": "^2.0.1",
     "webpack": "3.8.1",
-    "zxcvbn": "^4.2.0"
+    "zxcvbn": "^4.2.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "chai": "^2.1.1",
@@ -88,6 +89,9 @@
     "test": "karma start --single-run --browsers ChromeHeadless",
     "test-travis": "karma start --single-run --browsers ChromeHeadlessNoSandbox",
     "webpack-dev": "webpack --config webpack.dev.config.js",
-    "webpack-prod": "webpack --config webpack.prod.config.js"
-  }
+    "webpack-prod": "webpack --config webpack.prod.config.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
